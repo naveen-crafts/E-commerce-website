@@ -1,141 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NK | Fashion Store, Chennai</title>
-  <meta name="description" content="NK is a modern fashion store in Chennai. Shop shirts, hoodies, dresses and more with free shipping and up to 70% off.">
-  <meta property="og:title" content="NK | Fashion Store">
-  <meta property="og:description" content="Super value deals on all products.">
-  <meta property="og:image" content="images/hero.webp">
-  <meta name="theme-color" content="#e48c9a">
-  <link rel="icon" href="images/NK.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="E-com.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK</title>
+    <link rel="icon" href="images/NK.png" sizes="96x96" type="image/png">
+    <link rel="stylesheet" href="E-com.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
+
 <body>
-  <a class="skip" href="#products">Skip to products</a>
-
-  <div class="announce">Free shipping above ₹1,999 &nbsp;·&nbsp; Use code <strong>NK10</strong> for 10% off</div>
-  <header class="nav" id="top">
-    <a href="#top" class="brand"><img src="images/NK.png" alt="NK logo" width="44" height="44"></a>
-    <nav>
-      <ul class="navbar" id="navbar">
-        <li><a href="#top">Home</a></li>
-        <li><a href="#features">About</a></li>
-        <li><a href="#products">Store</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="actions">
-      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
-      <button class="icon-btn" id="cartBtn" aria-label="Open cart"><i class="fas fa-shopping-bag"></i><span class="badge" id="cartCount">0</span></button>
-      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    <div class="nav">
+        <img src="images/NK.png" alt="logo" height="40px" width="40px">
+        <ul class="navbar">
+            <li><a href="#"> HOME</a></li>
+            <li><a href="#"> ABOUT</a></li>
+            <li><a href="#"> STORE</a></li>
+        </ul>
+        <div id="bar" class="fas fa-bars"></div>
     </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h4>Trade in offer!</h4>
-      <h2>Super value deals</h2>
-      <h1>on all products</h1>
-      <p>Save more with coupons &amp; up to 70% off</p>
-      <a href="#products" class="btn">Explore</a>
+    <div class="main">
+        <h4>Trade in offer!</h4>
+        <h2>Super value deals</h2>
+        <h1>on all products</h1>
+        <p>Save more with coupons & up to 70% off</p>
+        <button>Explore</button>
     </div>
-  </section>
-
-  <section class="features" id="features">
-    <div class="feature"><img src="images/delivery.png" alt="" loading="lazy"><h4>Free shipping</h4></div>
-    <div class="feature"><img src="images/support.png" alt="" loading="lazy"><h4>Online order</h4></div>
-    <div class="feature"><img src="images/undraw_online_ad_re_ol62.png" alt="" loading="lazy"><h4>Promotions</h4></div>
-    <div class="feature"><img src="images/payonline.png" alt="" loading="lazy"><h4>Pay online</h4></div>
-    <div class="feature"><img src="images/support.png" alt="" loading="lazy"><h4>24/7 Customer support</h4></div>
-  </section>
-
-  <section class="section-title">
-    <h1>Featured Products</h1>
-    <h4>Summer collection, new modern design</h4>
-  </section>
-
-  <section class="shop" id="products">
-    <div class="toolbar">
-      <div class="filters" role="group" aria-label="Filter products">
-        <button class="chip active" data-cat="all">All</button>
-        <button class="chip" data-cat="men">Men</button>
-        <button class="chip" data-cat="women">Women</button>
-      </div>
-      <input type="search" id="search" placeholder="Search products..." aria-label="Search products">
-      <select id="sort" aria-label="Sort products">
-        <option value="default">Sort: Featured</option>
-        <option value="low">Price: Low to High</option>
-        <option value="high">Price: High to Low</option>
-        <option value="name">Name: A to Z</option>
-      </select>
+    <div class="containers">
+        <div class="minibox">
+            <img src="images/delivery.png" alt="" height="170px" width="250px">
+            <h4>Free shipping</h4>
+        </div>
+        <div class="minibox">
+            <img src="images/support.png" alt="" height="170px" width="250px">
+            <h4>Online order</h4>
+        </div>
+        <div class="minibox">
+            <img src="images/undraw_online_ad_re_ol62.png" alt="" height="170px" width="250px">
+            <h4>Promotions</h4>
+        </div>
+        <div class="minibox">
+            <img src="images/payonline.png" alt="" height="170px" width="250px">
+            <h4>Pay online</h4>
+        </div>
+        <div class="minibox">
+            <img src="images/support.png" alt="" height="170px" width="250px">
+            <h4>24/7 Customer support</h4>
+        </div>
     </div>
-    <div class="grid" id="grid"></div>
-    <p class="empty" id="empty" hidden>No products found. Try a different search.</p>
-  </section>
-
-  <section class="promo">
-    <h1>Repair services</h1>
-    <h4>Up to 70% off - All t-shirts &amp; accessories!</h4>
-    <a href="#products" class="btn">Explore more</a>
-  </section>
-
-  <section class="banners">
-    <div class="banner b1"><h4>Crazy deals!</h4><h2>Buy 1 get 1 free</h2><p>The best classic dress is on sale</p><a href="#products" class="btn sm">Learn more</a></div>
-    <div class="banner b2"><h4>Spring/Summer</h4><h2>Upcoming season</h2><p>The best classic dress is on sale</p><a href="#products" class="btn sm">Collection</a></div>
-    <div class="banner b3"><h2>Seasonal Sale</h2><h4>Winter collection: 50% off</h4></div>
-    <div class="banner b4"><h2>New Footwear Collection</h2><h4>Spring/Summer 2022</h4></div>
-    <div class="banner b5"><h2>T-Shirts</h2><h4>New trendy prints</h4></div>
-  </section>
-
-  <section class="newsletter">
-    <h1>Sign up for newsletter</h1>
-    <h2>Get email updates about our latest shop and special offers</h2>
-    <form id="newsForm" class="news-box" novalidate>
-      <input type="email" id="email" placeholder="Enter your email address" aria-label="Email address" required>
-      <button class="btn" type="submit">Sign up</button>
-    </form>
-    <p class="form-msg" id="formMsg" role="status"></p>
-  </section>
-
-  <footer class="footer" id="contact">
-    <div class="f1">
-      <img src="images/NK.png" alt="NK logo" width="40" height="40">
-      <h4>Contact</h4>
-      <p><strong>Address:</strong> No.1, Unknown Street, Chennai, India</p>
-      <p><strong>Phone:</strong> +0123456789 / (+91) 9876543210</p>
-      <p><strong>Hours:</strong> 10:00 - 18:00, Mon to Sat</p>
     </div>
-    <div class="infoot">
-      <div><h4>About</h4><p>About us</p><p>Delivery Information</p><p>Privacy Policy</p><p>Terms &amp; Conditions</p><p>Contact Us</p></div>
-      <div><h4>My account</h4><p>Sign In</p><p>View Cart</p><p>My Wishlist</p><p>Track My Order</p><p>Help</p></div>
+    <div class="searchbox">
+        <h1>FEATURED PRODUCTS</h1>
+        <h4>Summer collection New modern design</h4>
     </div>
-  </footer>
-  <div class="credit">Created by <span>Naveen Kumar V B</span> | All rights reserved.</div>
-
-  <div class="overlay" id="overlay"></div>
-  <aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
-    <div class="drawer-head"><h3>Your Cart</h3><button class="icon-btn" id="closeCart" aria-label="Close cart"><i class="fas fa-times"></i></button></div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="drawer-foot">
-      <p class="ship" id="shipMsg"></p>
-      <div class="bar"><i id="shipBar"></i></div>
-      <form class="coupon" id="couponForm"><input id="couponInput" placeholder="Coupon code (try NK10)" aria-label="Coupon code"><button class="btn sm" type="submit">Apply</button></form>
-      <div class="row"><span>Subtotal</span><span id="cartSub">₹0</span></div>
-      <div class="row" id="discRow" hidden><span>Discount (NK10)</span><span id="cartDisc">₹0</span></div>
-      <div class="row total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
-      <button class="btn full" id="checkout">Checkout</button>
-      <button class="link-btn" id="clearCart">Clear cart</button>
+    <div class="products">
+        <div class="featuredproducts">
+            <img src="images/Product1.jpg" alt="Product1" height="330px" width="280px">
+            <h4>COOLMAX® Regular Fit Shirt Rs.1,499.00 Black</h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product08.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Lyocell resort shirt
+                <br> Rs.1,499.00
+            </h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product03.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Relaxed Fit Hoodie
+                <br> Rs.1,499.00
+            </h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product4.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Regular Fit Linen-blend shirt
+                <br> Rs.1,499.00
+            </h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product9.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Ribbed cut-out top<br>
+                Rs.799.00 Dark brown</h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product6.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Single-breasted jacket
+                <br> Rs.2,499.00
+            </h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product07.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Boyfriend Low Regular Jeans
+                <br> Rs.2,699.00
+            </h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product08.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Balloon-sleeved cut-out crêpe dress
+                <br> Rs.2,699.00
+            </h4>
+        </div>
+        <div class="featuredproducts">
+            <img src="images/product5.jpg" alt="Product1" height="330px" width="280px">
+            <h4>Polo shirt slim fit
+                <br> Rs.1,799.00
+            </h4>
+        </div>
     </div>
-  </aside>
-
-  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-  <div class="toast" id="toast" role="status"></div>
-  <script src="E-com.js"></script>
+    <div class="search">
+        <h1>Repair services</h1>
+        <h4>Upto 70% off - All tshirts & Accesories!</h4>
+        <button>Explore more</button>
+    </div>
+    <div class="banner">
+        <div class="banner1">
+            <h4>Crazy deals!</h4>
+            <h2>buy 1 get 1 free</h2>
+            <p>The best classic dress is on sale</p>
+            <button>Learn more</button>
+        </div>
+        <div class="banner2">
+            <h4>Spring/Summer</h4>
+            <h2>upcoming season</h2>
+            <h1>buy 1 get 1 free</h1>
+            <p>The best classic dress is on sale</p>
+            <button>Collection</button>
+        </div>
+        <div class="banner3">
+            <h2>SEASONAL SALE</h2>
+            <h4>Winter collection : 50% off</h4>
+        </div>
+        <div class="banner4">
+            <h2>NEW FOOTWEAR COLLECTION</h2>
+            <h4>Spring/Summer 2022</h4>
+        </div>
+        <div class="banner5">
+            <h2>T-SHIRTS</h2>
+            <h4>New trendy prints</h4>
+        </div>
+    </div>
+    <div class="letterbox">
+        <h1>Sign up for newsletter</h1>
+        <h2>Get email updates about our latest shop and special offers</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter your email address">
+            <button>Sign up</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f1">
+            <img src="images/NK.png" alt="logo" height="40px" width="40px">
+            <h4>Contact</h4>
+            <p> <strong>Address : </strong></Address> no.1,Unknown street,Chennai,India</p>
+            <p> <strong>Phone : </strong></Address> +0123456789 /(+91)9876543210</p>
+            <p> <strong>Hours : </strong></Address> Morning 10:00 - 18:00,Mon to sat</p> 
+        </div>
+        <div class="infoot">
+            <div class="f2">
+                <h4>About</h4>
+                <p>About us</p>
+                <p>Delivery Information</p>
+                <p>Privacy Policy</p>
+                <p>Terms & conditions</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="f3">
+                <h4>My account</h4>
+                <p>Sign In</p>
+                <p>View Cart</p>
+                <p>My Wishlist</p>
+                <p>Track My Order</p>
+                <p>Help</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="credit">
+        Created by <span>Naveen Kumar V B </span> | all rights reserved.
+    </div>
+    <script src="E-com.js"></script>
 </body>
+
 </html>
